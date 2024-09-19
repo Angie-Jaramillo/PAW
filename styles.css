@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background: url('/Resources/fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+header h1, header h2 {
+    text-align: center;
+    margin: 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    text-shadow: -10px 10px 10px white;
+}
+
+header h2 {
+    color: #ff6f61;
+    font-size: 1.5rem;
+}
+
+nav {
+    background-color: rgba(72, 0, 255, 0.5);
+    text-align: left;
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.box {
+    width: 300px;
+    height: 150px;
+    padding: 15px;
+    margin: 20px;
+    text-align: right;
+    box-shadow: -10px -10px 10px rgba(255, 255, 255, 0.61);
+}
+
+#html_box{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.box h3{
+    text-align: right;
+    color: #ff6f61;
+}
+
+.dns {
+    align-self: center;
+    grid-column: 1;
+    grid-row: 1;
+    background-color: rgba(252, 240, 244, 0.5);
+}
+
+.html {
+    grid-column: 2;
+    background-color: rgba(128, 0, 128, 0.5);
+}
+
+.tcpip {
+    align-self: center;
+    grid-row: 1;
+    grid-column: 3;
+    background-color: rgba(128, 0, 0, 0.5);
+}
+
+.css {
+    grid-column: 2;
+    background-color: rgba(0, 128, 128, 0.5);
+}
+
+footer {
+    overflow-y: auto;
+    text-align: center;
+    margin: 40px 0;
+}
