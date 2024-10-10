@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARCIAL 2</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ejemplo lista</h1>
+    </header>
+
+    <section>
+        <h2>COMIDAS</h2>
+        <form action="#" id="food-form">
+            <label for="sel-food">Comidas: </label>
+            <select name="sel-food" id="sel-food">
+            </select>
+            <input type="submit" value="Buscar">
+        </form>
+    </section>
+
+    <section>
+        <h2>Food Details</h2>
+        <form id="element-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="description">Description:</label>
+            <input type="text" id="description" name="description" required>
+
+            <label>Ingredients:</label>
+            <ul id="ingredients-list"></ul>
+		
+	        <label for="image-url">Imagen Url:</label>
+            <input type="text" id="image-url" name="image-url" required>
+		
+            <label>Image:</label>
+            <img id="food-image" src="" alt="Food image preview" style="max-width: 200px; display: block; margin-top: 10px;">
+
+            <button type="submit">Save</button>
+        </form>
+        <div id="message"></div>
+    </section>
+
+    <script type="module" src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+select, form input {
+    display: block;
+    margin: 10px 0;
+}
+
+#message {
+    margin-top: 20px;
+    color: green;
+}
+
+.error {
+    color: red;
+}
