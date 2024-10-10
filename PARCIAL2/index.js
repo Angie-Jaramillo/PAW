@@ -51,7 +51,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             const updatedFoods = await apiService.getFoods();
             domService.renderFoodOptions(updatedFoods);
 
-            //domService.clearForm();
             form.reset();
             document.getElementById('sel-food').value = ''; 
             foodId = '';
