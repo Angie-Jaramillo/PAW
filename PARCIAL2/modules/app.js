@@ -17,20 +17,13 @@ export class DomService {
     fillFormWithFood(food) {
 
         document.getElementById('name').value = food.name || '';
+
         document.getElementById('description').value = food.description || '';
 
-        const ingredientsList = document.getElementById('ingredients-list');
-        ingredientsList.innerHTML = '';
-
-        if (food.ingredients && food.ingredients.length > 0) {
-            food.ingredients.forEach(ingredient => {
-                const li = document.createElement('li');
-                li.textContent = ingredient;
-                ingredientsList.appendChild(li);
-            });
-        }
+        document.getElementById('ingredients-list').value = food.ingredients ? food.ingredients.join('\n') : '';
 	
-	document.getElementById('image-url').value = food.image || '';
+        document.getElementById('image-url').value = food.image || '';
+        
         document.getElementById('food-image').src = food.image || '';
     }
 
